@@ -63,4 +63,16 @@ public class Card {
 	public int pointValue() {
 		return pointValue;
 	}
+	
+	/**
+	 * Converts the rank, suit, and point value into a string in the format
+	 *     "[Rank] of [Suit] (point value = [PointValue])".
+	 *
+	 * @return a <code>String</code> containing the rank, suit,
+	 *         and point value of the card.
+	 */
+
+	public String toString() {
+		return rank + " of " + suit + " (point value = " + pointValue + ")";
+	}
 }
