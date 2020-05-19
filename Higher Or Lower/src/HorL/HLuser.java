@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HLuser {
+	//instance variables
 	public static final String[] BUTTONS = {"Higher", "Lower", "Exit"}; 
 	private HLWindow _w;
 	private HLview _view;
@@ -12,6 +13,8 @@ public class HLuser {
 	int lost;
 	Card current;
 	
+	//constructor
+	//sets up a new round of the game, checking to make sure whether or not the user has three loses or not, to which they lose the game
 	public HLuser() {
 		_w = new HLWindow();
 		_view = new HLview();
@@ -30,7 +33,7 @@ public class HLuser {
 		
 		
 	}
-	
+	//checks whether or not the next card is higher or lower in value than the previous card, and then checks if the user was correct
 	public int choice(int x) {
 		if (x == 0) { //higher
 			if (_deck.deal().pointValue() >= current.pointValue()) {
