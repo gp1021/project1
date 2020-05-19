@@ -44,7 +44,7 @@ public class HLview {
 	 public HLview() {
 			deck = new Deck();
 		}
-	 
+	 //creates a toString method to show the user each round (correct guesses, incorrect, current card)
 	 public String toString(Card card, int correct, int lost) {
 		 return "Number of Correct Guesses: " + correct + "\n" + 
 				 "Number of Incorrect Guesses: " + lost + "\n" + 
